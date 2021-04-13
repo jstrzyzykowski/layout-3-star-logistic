@@ -9,7 +9,6 @@
 **1. Clone/download the repository on your local machine.**
 
 **2. Make sure you have an account on https://www.emailjs.com**
-##### Install dependencies
 
 **3. Into `contactForm.js` there is an global object `EMAIL_JS`. 
 Fill its property based on your email.js account value.**
