@@ -1,0 +1,81 @@
+/* <div class="card">
+  <img src="images/img_card_2.png" alt="">
+  <div class="card-text">
+    <h3>Lorem ipsum dolor</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, explicabo natus sunt labore.
+    </p>
+    <a href="" class="btn btn-outline">Dark</a>
+    </div>
+</div> */
+
+.card {
+  justify-self: center;
+  width: 260px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #222222;
+  color: whitesmoke;
+  overflow: hidden;
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(243, 222, 159, 0.3);
+}
+
+.card::before {
+  bottom: 0px;
+  left: 0px;
+  transform: translate(-50%, 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover::before {
+  bottom: -15px;
+  left: -15px;
+}
+
+.card::after {
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform: translate(70%, -60%);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover::after {
+  top: -5px;
+  right: -5px;
+}
+
+.card-text {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.card-text h3 {
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.card-text p {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}

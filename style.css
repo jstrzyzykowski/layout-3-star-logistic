@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F3DE9F;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
